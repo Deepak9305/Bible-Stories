@@ -1,0 +1,72 @@
+export const S = {
+    page: { maxWidth: 800, margin: "0 auto", padding: "20px 16px" },
+    header: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 },
+    appName: { fontSize: 28, fontWeight: 700, letterSpacing: -0.5 },
+    appTag: { fontSize: 13, marginTop: 4, opacity: 0.8 },
+    headerRight: { display: "flex", gap: 8, alignItems: "center" },
+    iconBtn: { padding: "8px 12px", borderRadius: 8, fontSize: 13, fontWeight: 600, border: "none", cursor: "pointer" },
+
+    quickStats: { display: "flex", padding: "16px 0", borderRadius: 12, marginBottom: 16, justifyContent: "space-around" },
+    quickStat: { textAlign: "center" },
+    quickStatValue: { fontSize: 24, fontWeight: 700 },
+    quickStatLabel: { fontSize: 11, marginTop: 4, textTransform: "uppercase", letterSpacing: 0.5 },
+    quickStatDivider: { width: 1, opacity: 0.3 },
+
+    streakBanner: { borderRadius: 12, padding: 16, display: "flex", alignItems: "center", gap: 12, marginBottom: 16 },
+    streakIcon: { fontSize: 32 },
+    streakNum: { fontSize: 20, fontWeight: 700 },
+    streakSub: { fontSize: 13, marginTop: 2 },
+
+    challengeCard: { borderRadius: 12, padding: 16, marginBottom: 16, cursor: "pointer" },
+    challengeHeader: { display: "flex", gap: 12, alignItems: "center", marginBottom: 12 },
+    challengeTitle: { fontSize: 16, fontWeight: 700 },
+    challengeSub: { fontSize: 13, marginTop: 2 },
+    challengeStory: { fontSize: 18, fontWeight: 600, display: "flex", alignItems: "center" },
+
+    progressSection: { marginBottom: 20 },
+    progressLabel: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 },
+    progressTitle: { fontSize: 15, fontWeight: 600 },
+    progressCount: { fontSize: 13 },
+    progressBar: { height: 8, borderRadius: 999, overflow: "hidden" },
+    progressFill: { height: "100%", borderRadius: 999, transition: "width 0.5s cubic-bezier(0.4,0,0.2,1)" },
+
+    searchSection: { marginBottom: 16 },
+    searchInput: { width: "100%", padding: "12px 16px", borderRadius: 10, fontSize: 15, outline: "none" },
+
+    filterChips: { display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 20 },
+    filterChip: { padding: "8px 14px", borderRadius: 20, fontSize: 13, fontWeight: 600, cursor: "pointer", border: "none", transition: "all 0.2s" },
+
+    grid: { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: 12 },
+    levelCard: { borderRadius: 12, padding: 16, textAlign: "center", animation: "fadeIn 0.4s ease" },
+    lvIcon: { fontSize: 40, marginBottom: 8 },
+    lvTitle: { fontSize: 15, fontWeight: 600, marginBottom: 4 },
+    lvEra: { fontSize: 11, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 },
+    lvTime: { fontSize: 11, marginTop: 8 },
+    completeBadge: { marginTop: 8, padding: "4px 10px", borderRadius: 999, fontSize: 11, fontWeight: 700, display: "inline-block" },
+    favoriteBtn: { position: "absolute", top: 8, right: 8, background: "transparent", border: "none", fontSize: 20, cursor: "pointer", lineHeight: 1 },
+    favoriteIndicator: { position: "absolute", top: 8, left: 8, fontSize: 16 },
+    emptyState: { textAlign: "center", padding: 40, fontSize: 15 },
+
+    topNav: { position: "sticky", top: 0, zIndex: 100, backdropFilter: "blur(10px)", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px" },
+    navBtn: { background: "none", border: "none", fontSize: 15, fontWeight: 600, cursor: "pointer" },
+    navCenter: { fontSize: 16, fontWeight: 700 },
+    navRight: { display: "flex", gap: 12 },
+    offlineBadge: { fontSize: 10 },
+
+    notificationContainer: { position: "fixed", top: 20, right: 20, zIndex: 1000, display: "flex", flexDirection: "column", gap: 8, maxWidth: 300 },
+    notification: { padding: "12px 16px", borderRadius: 10, fontSize: 14, fontWeight: 600, boxShadow: "0 4px 12px rgba(0,0,0,0.2)", animation: "slideDown 0.3s ease" },
+
+    overlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 999, backdropFilter: "blur(4px)" },
+    badgePop: { background: "#1a1712", borderRadius: 16, padding: 32, textAlign: "center", maxWidth: 320, border: "2px solid #d4a574" },
+    bpSub: { fontSize: 13, color: "#b8ad94", marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 },
+    bpTitle: { fontSize: 24, fontWeight: 700, color: "#d4a574", marginBottom: 8 },
+    bpDesc: { fontSize: 15, color: "#e8dcc8", marginBottom: 20 },
+    btnPrimary: { width: "100%", padding: "12px 24px", borderRadius: 10, fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", background: "#d4a574", color: "#0a0908" },
+
+    modal: { borderRadius: 16, padding: 24, maxWidth: 400, width: "90%" },
+    modalTitle: { fontSize: 20, fontWeight: 700, marginBottom: 8 },
+    modalDesc: { fontSize: 14, marginBottom: 20 },
+    shareStats: { padding: 16, borderRadius: 10, marginBottom: 16, display: "flex", flexDirection: "column", gap: 8 },
+    shareStat: { fontSize: 15, fontWeight: 600 },
+    btnSecondary: { width: "100%", padding: "12px 24px", borderRadius: 10, fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", marginTop: 8 },
+};

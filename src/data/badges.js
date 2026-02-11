@@ -1,0 +1,17 @@
+export const BADGE_DEFS = [
+    { id: "first", title: "First Step", icon: "👣", desc: "Completed 1 story", threshold: 1 },
+    { id: "learner", title: "Learner", icon: "📚", desc: "Completed 3 stories", threshold: 3 },
+    { id: "seeker", title: "Seeker", icon: "🔍", desc: "Completed 5 stories", threshold: 5 },
+    { id: "devoted", title: "Devoted", icon: "🙏", desc: "Completed 10 stories", threshold: 10 },
+    { id: "explorer", title: "Explorer", icon: "🗺️", desc: "Completed 15 stories", threshold: 15 },
+    { id: "disciple", title: "Disciple", icon: "✝️", desc: "Completed 20 stories", threshold: 20 },
+    { id: "scholar", title: "Scholar", icon: "📖", desc: "Completed 30 stories", threshold: 30 },
+    { id: "teacher", title: "Teacher", icon: "👨‍🏫", desc: "Completed 40 stories", threshold: 40 },
+    { id: "master", title: "Master", icon: "🎓", desc: "Completed all 50 stories!", threshold: 50 },
+    { id: "perfect_1", title: "Perfect Start", icon: "⭐", desc: "Got 3/3 on first story", special: true },
+    { id: "streak_7", title: "Week Warrior", icon: "🔥", desc: "7-day streak", special: true },
+    { id: "streak_30", title: "Month Master", icon: "📅", desc: "30-day streak", special: true },
+    { id: "early_bird", title: "Early Bird", icon: "🌅", desc: "Completed a story before 8am", special: true },
+    { id: "night_owl", title: "Night Owl", icon: "🦉", desc: "Completed a story after 10pm", special: true },
+    { id: "speed_demon", title: "Speed Reader", icon: "⚡", desc: "Completed quiz in under 60s", special: true },
+];
