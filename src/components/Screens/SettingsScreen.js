@@ -42,7 +42,7 @@ export default function SettingsScreen({ settings, setSettings, theme, setScreen
                                 Audio: {settings.audioEnabled ? "ON" : "OFF"}
                             </button>
                             <button
-                                onClick={() => { playSfx("success"); haptic("success"); Haptics.vibrate(50); }}
+                                onClick={() => { playSfx("success"); haptic("success"); if (navigator.vibrate) navigator.vibrate(50); }}
                                 style={{ padding: "8px 12px", borderRadius: 8, background: theme.bgAlt, color: theme.text, border: `1px solid ${theme.border}`, fontWeight: 600 }}
                             >
                                 🔊 Test
