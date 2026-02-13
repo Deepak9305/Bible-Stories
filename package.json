@@ -12,7 +12,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,10 +47,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/bible-adventure.git"
+    "url": "https://github.com/Deepak9305/Bible-Stories.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/bible-adventure/issues"
+    "url": "https://github.com/Deepak9305/Bible-Stories/issues"
   },
-  "homepage": "https://github.com/yourusername/bible-adventure"
+  "homepage": "https://Deepak9305.github.io/Bible-Stories/",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
