@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Bible-Stories/static/js/main.7df215ca.js",
+    "main.js": "/Bible-Stories/static/js/main.f42e7737.js",
     "index.html": "/Bible-Stories/index.html",
-    "main.7df215ca.js.map": "/Bible-Stories/static/js/main.7df215ca.js.map"
+    "main.f42e7737.js.map": "/Bible-Stories/static/js/main.f42e7737.js.map"
   },
   "entrypoints": [
-    "static/js/main.7df215ca.js"
+    "static/js/main.f42e7737.js"
   ]
 }
