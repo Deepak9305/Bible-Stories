@@ -41,9 +41,9 @@ export const THEMES = {
     }
 };
 export const AUDIO_ASSETS = {
-    bgMusic: "https://cdn.pixabay.com/audio/2022/03/15/audio_7326aa60a1.mp3", // Relaxing ambient
-    click: "https://cdn.pixabay.com/audio/2022/03/10/audio_c35278d32e.mp3", // Soft click
-    success: "https://cdn.pixabay.com/audio/2021/08/04/audio_0625615dc6.mp3", // Level up chime
-    error: "https://cdn.pixabay.com/audio/2021/08/04/audio_650630be82.mp3", // Error buzz
-    badge: "https://cdn.pixabay.com/audio/2021/08/04/audio_32c8646b97.mp3"  // Orchestral victory
+    bgMusic: process.env.PUBLIC_URL + "/audio/bg-music.mp3",
+    click: process.env.PUBLIC_URL + "/audio/click.mp3",
+    success: process.env.PUBLIC_URL + "/audio/success.mp3",
+    error: process.env.PUBLIC_URL + "/audio/error.mp3",
+    badge: process.env.PUBLIC_URL + "/audio/badge.mp3"
 };

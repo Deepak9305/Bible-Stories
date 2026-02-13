@@ -111,19 +111,20 @@ export default function BibleAdventure() {
     useEffect(() => {
         if (!bgMusic) return;
 
-        const startMusic = () => {
-            if (settings.musicEnabled) {
-                bgMusic.play().catch(e => {
-                    // Browsers block autoplay until first interaction
-                    console.log("Music waiting for interaction...");
-                });
+        const handleInteraction = () => {
+            if (settings.musicEnabled && bgMusic.paused) {
+                bgMusic.play().catch(e => console.log("Audio play failed:", e));
             }
         };
 
         if (settings.musicEnabled) {
-            startMusic();
-            // Also listen for first click to overcome autoplay restrictions
-            window.addEventListener("click", startMusic, { once: true });
+            // Try playing immediately
+            bgMusic.play().catch(() => {
+                // If blocked, wait for interaction
+                window.addEventListener("click", handleInteraction, { once: true });
+                window.addEventListener("keydown", handleInteraction, { once: true });
+                window.addEventListener("touchstart", handleInteraction, { once: true });
+            });
         } else {
             bgMusic.pause();
         }
@@ -131,7 +132,9 @@ export default function BibleAdventure() {
         bgMusic.volume = settings.musicVolume || 0.3;
 
         return () => {
-            window.removeEventListener("click", startMusic);
+            window.removeEventListener("click", handleInteraction);
+            window.removeEventListener("keydown", handleInteraction);
+            window.removeEventListener("touchstart", handleInteraction);
         };
     }, [settings.musicEnabled, bgMusic, settings.musicVolume]);
 
