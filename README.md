@@ -1,5 +1,7 @@
 # Bible Adventure
 
+**[🔴 VIEW LIVE APP HERE 🔴](https://Deepak9305.github.io/Bible-Stories/)**
+
 Interactive Bible learning app with 50 stories, quizzes, and achievements.
 
 ## Project Structure
